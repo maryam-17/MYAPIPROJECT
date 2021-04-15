@@ -1,4 +1,4 @@
-const model =require("./Model");
+const model =require("./model");
 
 exports.getAllEntry= async (req,res =>{
     const newData=await model.find();
