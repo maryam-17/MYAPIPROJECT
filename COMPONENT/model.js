@@ -2,18 +2,23 @@ const mongoose=require ("mongoose");
 
 const schemaStructure=mongoose.Schema({
     name:{
-        rating:{
-            type:Number,
-            required:true,
-        },
-    country:{
-        type:string,
-        required:true,
+        type: String,
     },
-    location:{
-        type:string,
-        required:true,
-    }
-    }
+   brand:{
+        type:String,
+    },
+   price:{
+        type:Number,
+        
+    },
+    quantity:{
+        type:Number,
+        
+    },
+    unit:{
+        type:Number,
+        
+    },
+    
 })
-module.exports = mongoose.model("monies", storeSchema);
+module.exports = mongoose.model("foods", schemaStructure);

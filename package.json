@@ -1,22 +1,30 @@
 {
-  "name": "REVISON",
+  "name": "revison",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies":
+  "dependencies": {
     "cors": "^2.8.5",
     "env": "^0.0.2",
     "express": "^4.17.1",
     "mongod": "^2.0.0",
-    "mongoose": "^5.12.3",
     "mongodb": "^3.6.6",
+    "mongoose": "^5.12.3",
     "nodemon": "^2.0.7"
   },
   "devDependencies": {},
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"node rev.js"
   },
-  "keywords": [],
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maryam-17/revision2.git"
+  },
   "author": "",
-  "license": "ISC"
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/maryam-17/revision2/issues"
+  },
+  "homepage": "https://github.com/maryam-17/revision2#readme"
 }
