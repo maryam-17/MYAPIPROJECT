@@ -1,4 +1,6 @@
+require('dotenv').config();
 const express =require ("express");
+// const env = require("env")
 const mongoose =require("mongoose");
 const port=process.env.PORT || 2022;
 const cors =require("cors");
@@ -17,6 +19,7 @@ mongoose.connect(ONLINE_DB, {
 });
 
 app.use(express.json()); 
+app.use(cors())
 app.use("/", require ("./COMPONENT/controller"));
 
 
